@@ -274,41 +274,7 @@ function goRegister() {
 </script>
 
 <style scoped>
-:root {
-  --space-xs: 0.25rem;    /* 4px */
-  --space-sm: 0.5rem;     /* 8px */
-  --space-md: 1rem;       /* 16px */
-  --space-lg: 1.5rem;     /* 24px */
-  --space-xl: 2rem;       /* 32px */
-  --space-2xl: 3rem;      /* 48px */
-  --space-3xl: 4rem;      /* 64px */
-
-  /* 字体大小系统 */
-  --text-xs: 0.75rem;     /* 12px */
-  --text-sm: 0.875rem;    /* 14px */
-  --text-base: 1rem;      /* 16px */
-  --text-lg: 1.125rem;    /* 18px */
-  --text-xl: 1.25rem;     /* 20px */
-  --text-2xl: 1.5rem;     /* 24px */
-  --text-3xl: 2rem;       /* 32px */
-  --text-4xl: 2.5rem;     /* 40px */
-
-  /* 图标大小系统 */
-  --icon-xs: 0.875rem;    /* 14px */
-  --icon-sm: 1rem;        /* 16px */
-  --icon-md: 1.25rem;     /* 20px */
-  --icon-lg: 1.5rem;      /* 24px */
-  --icon-xl: 1.75rem;     /* 28px */
-  --icon-2xl: 2.5rem;     /* 40px */
-  --icon-3xl: 5rem;       /* 80px */
-
-  /* 圆角系统 */
-  --radius-sm: 0.375rem;  /* 6px */
-  --radius-md: 0.75rem;   /* 12px */
-  --radius-lg: 1rem;      /* 16px */
-  --radius-xl: 1.25rem;   /* 20px */
-  --radius-2xl: 1.5rem;   /* 24px */
-}
+/* 使用指定的四种颜色 */
 
 /* 全局容器 */
 .login-container {
@@ -339,24 +305,24 @@ function goRegister() {
 }
 
 .bg-circle-1 {
-  width: 25rem;
-  height: 25rem;
-  top: -12.5rem;
-  right: -12.5rem;
+  width: 400px;
+  height: 400px;
+  top: -200px;
+  right: -200px;
   animation-delay: 0s;
 }
 
 .bg-circle-2 {
-  width: 18.75rem;
-  height: 18.75rem;
-  bottom: -9.375rem;
-  left: -9.375rem;
+  width: 300px;
+  height: 300px;
+  bottom: -150px;
+  left: -150px;
   animation-delay: 3s;
 }
 
 .bg-circle-3 {
-  width: 12.5rem;
-  height: 12.5rem;
+  width: 200px;
+  height: 200px;
   top: 30%;
   left: 20%;
   animation-delay: 6s;
@@ -408,26 +374,26 @@ function goRegister() {
 }
 
 .logo-icon {
-  width: var(--icon-3xl);
-  height: var(--icon-3xl);
+  width: 80px;
+  height: 80px;
   background: linear-gradient(135deg, #88CEE6, #64B5F6);
-  border-radius: var(--radius-xl);
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  box-shadow: 0 0.625rem 1.875rem rgba(136, 206, 230, 0.3);
+  box-shadow: 0 10px 30px rgba(136, 206, 230, 0.3);
 }
 
 .logo-icon svg {
-  width: var(--icon-2xl);
-  height: var(--icon-2xl);
+  width: 40px;
+  height: 40px;
   stroke-width: 2;
 }
 
 .brand-title {
   margin: 0;
-  font-size: var(--text-4xl);
+  font-size: 2.5rem;
   font-weight: 800;
   background: linear-gradient(135deg, #1e293b, #475569, #88CEE6);
   -webkit-background-clip: text;
@@ -436,15 +402,15 @@ function goRegister() {
 }
 
 .brand-description h2 {
-  margin: 0 0 var(--space-md) 0;
-  font-size: var(--text-2xl);
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #1e293b;
 }
 
 .brand-description p {
   margin: 0;
-  font-size: var(--text-lg);
+  font-size: 1.125rem;
   color: #64748b;
   line-height: 1.6;
 }
@@ -544,11 +510,11 @@ function goRegister() {
 
 .input-icon {
   position: absolute;
-  left: var(--space-md);
+  left: 1rem;
   top: 50%;
   transform: translateY(-50%);
-  width: var(--icon-md);
-  height: var(--icon-md);
+  width: 20px;
+  height: 20px;
   stroke: #9ca3af;
   stroke-width: 2;
   pointer-events: none;
@@ -556,10 +522,10 @@ function goRegister() {
 
 .form-input {
   width: 100%;
-  padding: var(--space-md) var(--space-md) var(--space-md) var(--space-2xl);
+  padding: 1rem 1rem 1rem 3rem;
   border: 2px solid #e5e7eb;
-  border-radius: var(--radius-md);
-  font-size: var(--text-base);
+  border-radius: 12px;
+  font-size: 1rem;
   background: rgba(255, 255, 255, 0.8);
   color: #1f2937;
   transition: all 0.3s ease;
@@ -596,8 +562,8 @@ function goRegister() {
 }
 
 .error-icon {
-  width: var(--icon-sm);
-  height: var(--icon-sm);
+  width: 18px;
+  height: 18px;
   stroke-width: 2;
   flex-shrink: 0;
 }
@@ -605,20 +571,20 @@ function goRegister() {
 /* 登录按钮 */
 .login-button {
   width: 100%;
-  padding: var(--space-md);
+  padding: 1rem;
   background: linear-gradient(135deg, #88CEE6, #64B5F6);
   color: white;
   border: none;
-  border-radius: var(--radius-md);
-  font-size: var(--text-base);
+  border-radius: 12px;
+  font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin-top: var(--space-sm);
+  margin-top: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--space-sm);
+  gap: 0.5rem;
   position: relative;
   overflow: hidden;
 }
@@ -660,14 +626,14 @@ function goRegister() {
 }
 
 .button-icon {
-  width: var(--icon-md);
-  height: var(--icon-md);
+  width: 20px;
+  height: 20px;
   stroke-width: 2;
 }
 
 .loading-spinner {
-  width: var(--icon-md);
-  height: var(--icon-md);
+  width: 20px;
+  height: 20px;
   border: 2px solid rgba(255, 255, 255, 0.3);
   border-top: 2px solid white;
   border-radius: 50%;
